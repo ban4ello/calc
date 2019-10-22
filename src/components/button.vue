@@ -7,13 +7,13 @@
 <script>
 export default {
   props: {
-    value: String
+    value: Number
   },
 
   computed: {
     val() {
       if (this.value) {
-        return this.value;
+        return String(this.value).substring(0, 12);
       } else {
         return "0";
       }
