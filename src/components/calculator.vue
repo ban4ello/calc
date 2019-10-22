@@ -34,7 +34,6 @@ export default {
     },
 
     keyboardValue(val) {
-      console.log(val);
       let num = this.toNumber(val);
 
       if (num) {
@@ -55,6 +54,5 @@ export default {
   background-color: #eee;
   color: #fff;
   width: 250px;
-  height: 100%;
 }
 </style>
