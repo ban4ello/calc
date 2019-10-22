@@ -45,7 +45,9 @@ export default {
 
   methods: {
     update(e) {
-      this.$emit("keyboardValue", { value: e.target.textContent });
+      this.$emit("keyboardValue", {
+        value: e.target.textContent.replace(/ /g, "")
+      });
     }
   }
 };

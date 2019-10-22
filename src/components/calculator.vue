@@ -34,10 +34,15 @@ export default {
     },
 
     keyboardValue(val) {
+      console.log(val);
       let num = this.toNumber(val);
 
       if (num) {
         this.currentNumber = this.currentNumber.concat(val).replace(/ /g, "");
+      }
+
+      if (val === "AC") {
+        this.currentNumber = "";
       }
     }
   }
