@@ -1,20 +1,27 @@
 <template>
   <div class="calculator">
-    calculator
+    <display :value="123456789012345678"></display>
   </div>
 </template>
 
 <script>
+import display from "./display.vue";
+
 export default {
   name: "calculator",
-  props: {}
+
+  components: {
+    display
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .calculator {
-  width: 100px;
-  height: 100px;
+  background-color: #eee;
+  color: #fff;
+  width: 250px;
+  height: 300px;
 }
 </style>
